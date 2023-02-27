@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik&display=swap");
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: auto;
+}
+
+body {
+  height: 100vh;
+  width: 100vh;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(
+    to left bottom,
+    rgba(236, 13, 50, 0.76) 10%,
+    blue
+  );
+  font-family: "Poppins";
+}
+.app {
+  background-color: #fff;
+  width: 70vw;
+  height: 80vh;
+  display: flex;
+  flex: 1;
+  border-radius: 0.7rem;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.9);
+}
+.left {
+  height: 100%;
+  width: 50%;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  align-items: center;
+}
+.right {
+  height: 100%;
+  width: 50%;
+  border-bottom-right-radius: 1.5rem;
+  background-color: #fff;
+  border-top-right-radius: 1.5rem;
+}
+.top {
+  position: absolute;
+  top: 60px;
+}
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+h3 {
+  font-size: 10px;
+  color: gray;
+  font-weight: 300;
+}
+section {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* inputs */
+fieldset {
+  border-radius: 1.5rem;
+  height: 3rem;
+  width: 20rem;
+  display: flex;
+  position: relative;
+}
+fieldset:hover {
+  transform: scale(1.1);
+  transition: 400ms;
+  cursor: pointer;
+  width: 15rem;
+}
+legend {
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+  background-color: white;
+  width: 100px;
+  left: 30px;
+  display: flex;
+  justify-content: center;
+  color: gray;
+  opacity: 05;
+  font-size: 13px;
+}
+legend:nth-child(2) {
+  width: 400px;
+}
+input:hover {
+  transform: scale(1.1);
+  transition: 400ms;
+  cursor: pointer;
+}
+.Username {
+  width: 90%;
+  height: 2rem;
+  all: unset;
+  position: relative;
+  top: 10px;
+}
+.Senha legend {
+  width: 120px;
+}
+.Senhasss {
+  width: 80%;
+  position: relative;
+  all: unset;
+  margin-top: 10px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+  gap: 20px;
+}
+.checkbox {
+  display: flex;
+  width: 100%;
+  position: relative;
+  gap: 10px;
+}
+.checkbox h2 {
+  font-size: 12px;
+  color: gray;
+  margin-right: 12rem;
+}
+/* Login */
+.logins {
+  margin-bottom: 5rem;
+}
+.logins .login {
+  width: 20rem;
+  height: 2.5rem;
+  border-radius: 2rem;
+  font-family: "Poppins";
+  font-size: 1rem;
+  border: none;
+  color: white;
+  background: linear-gradient(to left, rgba(236, 13, 50, 0.76), blue);
+}
+.login:hover {
+  transform: scale(1.1);
+  transition: 400ms;
+  cursor: pointer;
+}
+
+/* Animaçao */
+.active {
+  background: linear-gradient(to left, rgba(236, 13, 50, 0.76), blue);
+  animation: animate 1s ease-in-out;
+}
+.Name {
+  transition: background 500ms;
+}
+
+img {
+  animation: animaçaoLEft 2s;
+  transition: all 1s;
+  width: 80%;
+  height: 100%;
+}
+img:hover {
+  transform: translate(20px);
+  transition: 1s;
+}
+.line {
+  position: absolute;
+  height: 80%;
+  width: 1px;
+  background-color: gray;
+  top: 50px;
+  left: 25rem;
+}
+
+/* Animaçoes */
+@keyframes animaçaoLEft {
+  50% {
+    transform: translate(20px);
+    transition: 1s;
+  }
+}
+
+@keyframes animate {
+  100% {
+    background-position-x: 300px;
+  }
+}
